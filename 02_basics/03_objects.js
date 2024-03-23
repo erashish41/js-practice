@@ -1,5 +1,5 @@
 /* 2 types of declaring Objects 
-a. Literals       b. Constructor
+a. Object Literals - { }       b. Constructor
 
 a.when we make object in literals then their is no singleton
 b. when we make object in constructor then their is singleton
