@@ -35,7 +35,11 @@ function loginUser(username){
 // console.log(loginUser());               //if nothing is pass then undefined will come
 
 
-// when we make e-kart shopping app then we use like this
+
+
+
+// when we make E-kart shopping app then we use like this
+
 
 function calculateCartPrice(num){
     return num
@@ -61,7 +65,8 @@ handleObject(user)
 //passing Array
 const Arr1 = [200, 44, 77, 778, 13, 500]
 
-function returnSecondValue(anynum){
-    return anynum[1]
+function returnSecondValue(getAray){
+    return getAray[1]
 }
-console.log(returnSecondValue(Arr1));
+console.log(returnSecondValue(Arr1));    // or
+console.log(returnSecondValue ([200, 44, 77, 778, 13, 500]))
