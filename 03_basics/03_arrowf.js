@@ -30,8 +30,28 @@ const user = {
 
 ////function 2
 
- function chai (){
+//  function chai (){
+//         let username = "ashish"
+//         console.log(this.username);
+//     }
+// chai()      //output is undefined
+
+//// function 3
+ const chai  = () => {
         let username = "ashish"
-        console.log(this.username);
+        console.log(username);
     }
-chai()
+
+// chai()
+
+//// arrow function
+ const addTwo = (num1, num2) => {
+    return num1 * num2
+ }
+
+ console.log(addTwo(1,2));
+
+ const addTwo2 = (num1, num2) =>  num1 * num2
+ console.log(addTwo(1,2));
+
+ // if { } is used than have to write return and if ( ) is used than don't write return
