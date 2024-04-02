@@ -15,16 +15,16 @@
 // }
 
 
-//// empty Array and Object
-// const emptyArr = []
-// if(emptyArr.length === 0){
-//     console.log("array is empty");
-// }
+// empty Array and Object
+const emptyArr = []
+if(emptyArr.length === 0){
+    console.log("array is empty");
+}
 
-// const emptyObj = {}
-// if(Object.keys(emptyObj).length === 0){
-//     console.log("object is empty");
-// }
+const emptyObj = {}
+if(Object.keys(emptyObj).length === 0){
+    console.log("object is empty");
+}
 
 
 // // Nullish Coalescing Operator ??: null undefined
