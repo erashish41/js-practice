@@ -1,4 +1,5 @@
-// for_in
+// for_in used mostly for Object
+// for_of used mostly for Array
 
 // for_in with object
 const myObject = {
@@ -16,12 +17,12 @@ for (const key in programming) {
     // console.log(programming[key]);
 }
 
-// for_in with Maps  :    we can do iteration with Maps
-const map = new Map()                 // Map is object
-map.set('IN', "India")
-map.set('USA', "United States of America")
-map.set('Fr', "France")
-map.set('Cn', "Canada")
-for (const key in map) {
-    console.log(map[key]);
-}
+// // for_in with Maps  :    we can do iteration with Maps
+// const map = new Map()                 // Map is object
+// map.set('IN', "India")
+// map.set('USA', "United States of America")
+// map.set('Fr', "France")
+// map.set('Cn', "Canada")
+// for (const key in map) {
+//     console.log(map[key]);
+// }
