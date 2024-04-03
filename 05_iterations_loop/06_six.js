@@ -14,4 +14,19 @@
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // })
-console.log(newNums);
+// console.log(newNums);
+
+
+let countries = [
+        {name1: "United States", capital: "Washington, D.C.", currency: "US Dollar"},
+        {name1: "France", capital: "Paris", currency: "Euro"},
+        {name1: "India", capital: "New Delhi", currency: "Rupees"},
+        {name1: "China", capital: "Beijing", currency: "Renminbi" },
+        {name1: "Brazil", capital: "Brasília", currency: "Brazilian Real"},
+        {name1: "Australia", capital: "Canberra", currency: "Australian Dollar" },
+        {name1: "India", capital: "Kolkata", currency: "Rupees"},
+        
+    ];
+
+let userCountrys = countries.filter( (user) => { return user.name1 === "India"})
+console.log(userCountrys);
