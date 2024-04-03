@@ -2,13 +2,14 @@
 
 // forEach loop with Array with function
 const coding = ["js", "py", "rb", "c"]
-//callback function don't have function name -- (  function name() {}) name is missing 
+//callback function don't have function name -- (function name() {}) name is missing in callback
 coding.forEach(  function (item) {
     // console.log(item);
+    // console.log(item[0]);
 
 })
 
-// forEach loop with Array with Arrow function  // greet = () => { }
+// forEach loop with Array and with Arrow function  // greet = () => { }
 coding.forEach(   (arr) =>  { 
     // console.log(arr);
 })
