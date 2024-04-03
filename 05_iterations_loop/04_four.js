@@ -1,5 +1,5 @@
-// for_in used mostly for Object
-// for_of used mostly for Array
+// for_in = key (used to get the key from Array and Object)
+// for_of = value (used to get the value mostly from Array)
 
 // for_in with object
 const myObject = {
@@ -26,3 +26,8 @@ for (const key in programming) {
 // for (const key in map) {
 //     console.log(map[key]);
 // }
+
+const home = [ "father", "mother", "brother", "sister"]
+for(const key of home) {
+    console.log(key);
+}
