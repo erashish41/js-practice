@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom with Ashish</title>
+</head>
+<body style="background-color: #121212; color: #ffffff">
+    <div class="parent">
+        <div class="date">Monday</div>
+        <div class="date">Tuesday</div>
+        <div class="date">Wednesday</div>
+        <div class="date">Thrusday</div>
+    </div>
+</body>
+<script>
+   const parent = document.querySelector('.parent')
+   console.log(parent);
+   console.log(parent.children);             // every Element have children
+   console.log(parent.children[1].innerHTML);
+</script>
+</html>
