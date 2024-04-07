@@ -1,3 +1,5 @@
+ <!-- traversing (parent to child || child to parent) -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +9,14 @@
 </head>
 <body style="background-color: #121212; color: #ffffff">
     <div class="parent">
-        <div class="date">Monday</div>
-        <div class="date">Tuesday</div>
-        <div class="date">Wednesday</div>
-        <div class="date">Thrusday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
     </div>
 </body>
 <script>
-//    const parent = document.querySelector('.parent')
+   const parent = document.querySelector('.parent')
 //    console.log(parent);
 //    console.log(parent.children);             // every Element have children
 //    console.log(parent.children[1].innerHTML);
@@ -23,6 +25,18 @@
 //     console.log(parent.children[i].innerHTML);
     
 //    }
-   parent.children[1].style.color = "orange"
+
+// to access the parent to child
+   parent.children[1].style.color = "orange";
+//    console.log(parent.firstElementChild);
+//    console.log(parent.lastElementChild);
+
+// to access the child to parent 
+   const dayOne = document.querySelector('.day')
+//    console.log(dayOne);
+//    console.log(dayOne.parentElement);
+//    console.log(dayOne.nextElementSibling)
+
+console.log("NODES: ",parent.childNodes);
 </script>
 </html>
