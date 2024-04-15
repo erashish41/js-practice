@@ -21,28 +21,41 @@
 <script>
 
     
-    // Notes :- To learn these topics (!important)
-    //type, timestamp, defaultPrevented,
-    //target, toElement, srcElement, cyrrentTarget,
-    //clientX, clientY, screenX, screenY,
-    // altkey, ctrlkey, shiftkay, keyCode
+    // // Notes :- To learn these topics (!important)
+    // //type, timestamp, defaultPrevented,
+    // //target, toElement, srcElement, cyrrentTarget,
+    // //clientX, clientY, screenX, screenY,
+    // // altkey, ctrlkey, shiftkay, keyCode
 
 
-    // Event bubbling (false) = Event bubbling is the default behavior of event handling in JavaScript. Events bubble up the DOM tree, from the target element to the document element. This means that if you add an event handler to a parent element, it will be triggered whenever an event occurs on any of its child elements.
-    // Event capturing (true) = Event capturing allows you to handle events at the top of the DOM tree, before they reach their target element. This can be useful for implementing global event handlers, such as a click handler that closes a modal dialog.
-    // stopPropagation() method = You can use the stopPropagation() method to prevent an event from bubbling up the DOM tree. This can be useful for preventing global event handlers from being triggered.
+    // // Event bubbling (false) = Event bubbling is the default behavior of event handling in JavaScript. Events bubble up the DOM tree, from the target element to the document element. This means that if you add an event handler to a parent element, it will be triggered whenever an event occurs on any of its child elements.
+    // // Event capturing (true) = Event capturing allows you to handle events at the top of the DOM tree, before they reach their target element. This can be useful for implementing global event handlers, such as a click handler that closes a modal dialog.
+    // // stopPropagation() method = You can use the stopPropagation() method to prevent an event from bubbling up the DOM tree. This can be useful for preventing global event handlers from being triggered.
 
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log("clicked inside the ul");
-    }, false)
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log("owl clicked");
-        e.stopPropagation()
-    }, false)
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
 
-    document.getElementById('google').addEventListener('click', function(e){
-        console.log("google clicked");
-        e.preventDefault()
-    }, false)
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault()
+    // }, false)
+
+
+    // Task -- now we have to do that by clicking on picture it will remove that picture
+    document.querySelector("#images").addEventListener
+    ('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        
+    })
 </script>
 </html>
