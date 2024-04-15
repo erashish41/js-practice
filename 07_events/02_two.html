@@ -1,3 +1,5 @@
+// setTimeout and clearTimeout
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +12,26 @@
     <button id="stop"> Stop </button>
 </body>
 <script>
-
     // setTimeout(function(){
     //     console.log("Ashish");
     // }, 1000) 
     const sayAshish = function(){
         console.log("Ashish");
     }
-    setTimeout(sayAshish, 1000)
-</script>
+    setTimeout(sayAshish, 2000)
+
+    // to change the innerHTML
+
+    const changeInner = function(){
+        document.querySelector("h1").innerHTML = "Async Javascript"
+        console.log(changeInner);
+    }
+    const changeME = setTimeout(changeInner, 1000)
+
+    //  clearTimeout is used to remove the timeout specific with Reference
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeME)
+        console.log("Stopped");
+    })
+    </script>
 </html>
