@@ -40,3 +40,49 @@ const promiseThree = new Promise(function(resolve, reject){
 promiseThree.then(function(e){
     console.log(e);
 })
+
+
+// Promise Four
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username:"bhardwaj", password: "123"})
+        }else{
+            reject("ERROR: Something went wrong")
+        }
+    },1000)
+})
+
+promiseFour.then((user) => {
+    console.log(user);
+    return user.username
+})
+.then((username) => {
+    console.log(username);
+})
+.catch(function(error){
+    console.log(error);
+}).finally(function(){
+    console.log("The promise is resovled or rejected");
+})
+
+
+// Promise Five
+const promiseFive = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username:"javascript", password: "123"})
+        }else{
+            reject("ERROR: Something went wrong")
+        }
+    },1000)
+})
+
+async function consumePromiseFive(){
+    const response = await promiseFive
+    console.log(response);
+}
+
+consumePromiseFive()
