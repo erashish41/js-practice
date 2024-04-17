@@ -66,6 +66,7 @@ promiseFour.then((user) => {
 }).finally(function(){
     console.log("The promise is resovled or rejected");
 })
+// we can take values by (.then) and if any error then by (.reject)
 
 
 // Promise Five
