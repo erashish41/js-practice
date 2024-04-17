@@ -1,6 +1,6 @@
 // fetch().then().catch().finally()
-// .then have direct solution with resolve
-// if response come it will come in then and if error comes it will comes in catch
+// .then have a direct solution with a resolve
+// if a response come it will come in then and if the error comes it will come in catch
 // Promises are object
 // Pomises can be created and consumes
 // new Promise have callback function and callback have callback then again callback
@@ -42,7 +42,7 @@ promiseThree.then(function(e){
 })
 
 
-// Promise Four
+// Promise Four      (used for error file or not)
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
